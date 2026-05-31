@@ -48,7 +48,7 @@ class Game:
             alien.update()
             if alien.rect.top > self.HEIGHT:
                 self.aliens.remove(alien)
-                print("An alien escaped! Game Over.")
+                print(f"An alien escaped! Your score was: {self.score}. Game Over.")
                 self.running = False
 
         # Collision detection (Laser vs Alien)
